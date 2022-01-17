@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <style>
-        body { 
+      body { 
             width: 550px;
         }
         #header { 
@@ -10,20 +10,26 @@
             height:100px;
         }
         #content{ 
-            border:1px solid blue;
+            border:2px solid blue;
             height: 300px;    
         }
-        .sidebar { 
+        .lsidebar { 
             float: left;
-            border:1px solid gray;
-            width: 200px;
+            border:1px solid skyblue;
+            width: 100px;
             height: 300px;
         }
         .contents { 
+            float: left;
+            border: 1px solid skyblue;
+            width: 340px;
+            height: 300px;      
+        }
+        .rsidebar { 
             float: right;
-            border: 1px solid gray;
-            width: 330px;
-            height: 300px;
+            border:1px solid skyblue;
+            width: 100px;
+            height: 300px;     
         }
         #footer { 
             clear:both;
@@ -42,18 +48,14 @@
         border:2px dotted red; height:100px;
     </div>
     <div id="content">
-        <div class="sidebar">사이드바 자리<br>
-            border:1px solid gray;<br>
-            width:200px; height:300px;
+        <div class="lsidebar">사이드바 자리<br>
         </div>
         <div class="contents">컨텐츠 자리<br>
-            border:1px solid gray; width:330px;<br>
-            height:300px;
         </div>
+        <div class="rsidebar">오른쪽 사이드바</div>
     </div>
     <div id="footer">
         푸터가 들어갈 자리입니다.<br>
-        border:2px dashed green; height:100px;
     </div>
 </body>
 </html>
