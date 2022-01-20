@@ -27,8 +27,8 @@
          // 로직도 추가해주세요.
          function prevPic(){
              num--;// 이전 그림으로 이동
-             if(num < 2){// 
-                 num = 2;
+             if(num < 0){// 첫 그림보다 작은 번호로 가면
+                 num = 2;// 마지막 그림 번호로 적용
              }
              document.getElementById("pic").src
                 = "img/img" + num + ".jpg";
